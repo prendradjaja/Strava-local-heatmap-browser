@@ -79,7 +79,7 @@ def main(args):
      1.0: '#fcffa4'}
 
     # create Folium map
-    fmap = Map(tiles = 'CartoDB dark_matter', prefer_canvas = True, max_zoom = HEATMAP_MAXZOOM)
+    fmap = Map(tiles = 'CartoDB positron', prefer_canvas = True, max_zoom = HEATMAP_MAXZOOM)
 
     HeatMap(heatmap_data, radius = heatmap_radius, blur = heatmap_blur, gradient = heatmap_grad, max_zoom = 19).add_to(fmap)
 
